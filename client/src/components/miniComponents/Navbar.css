@@ -1,0 +1,150 @@
+.profile-dropdown {
+  background: #1f1f1f !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3) !important;
+  border-radius: 12px !important;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.profile-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  padding: 1rem !important;
+}
+
+.profile-name {
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.profile-email {
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-size: 0.9rem;
+}
+
+.profile-dropdown-item {
+  padding: 0.8rem 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s ease;
+}
+
+.profile-dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #FEA116;
+}
+
+.profile-button {
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  padding: 0.5rem 1rem;
+}
+
+.profile-button:hover {
+  background: rgba(254, 161, 22, 0.1) !important;
+  border-color: #FEA116 !important;
+}
+
+.profile-icon {
+  width: 36px;
+  height: 36px;
+  background: rgba(254, 161, 22, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FEA116;
+}
+
+.logout-icon {
+  color: #ff4d4d;
+}
+
+/* Animation */
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-dropdown {
+  animation: dropdownFadeIn 0.2s ease-out;
+}
+
+/* Navbar toggle button styles */
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  color: #fff;
+  background-color: transparent;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Responsive styles */
+@media (max-width: 991.98px) {
+  .profile-dropdown {
+    position: absolute !important;
+    right: 0;
+    width: 280px;
+  }
+  
+  /* Mobile profile dropdown positioning */
+  .mobile-profile .profile-dropdown.mobile-dropdown {
+    position: fixed;
+    top: auto;
+    bottom: 15px;
+    right: 15px;
+    width: calc(100% - 30px);
+    max-width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Improved navbar collapse animation */
+  .navbar-collapse {
+    transition: all 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+  
+  .navbar-collapse:not(.collapse) {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  /* Improved spacing for mobile nav items */
+  .navbar-nav .nav-item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .navbar-nav .nav-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Fix for iPhone 12 specific issues */
+  @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+    .navbar-brand img {
+      height: 40px;
+    }
+    
+    .mobile-profile .profile-dropdown.mobile-dropdown {
+      bottom: 20px;
+    }
+  }
+}

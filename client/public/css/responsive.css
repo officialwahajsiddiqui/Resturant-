@@ -1,0 +1,476 @@
+/* Responsive CSS Fixes */
+
+/* Contact Section Responsive Styles */
+@media (max-width: 767.98px) {
+    .contact-info-mobile {
+        text-align: center;
+    }
+    
+    .contact-info-mobile h5.section-title {
+        text-align: center !important;
+    }
+    
+    .form-floating {
+        margin-bottom: 10px;
+    }
+    
+    .form-control {
+        font-size: 14px;
+    }
+    
+    textarea.form-control {
+        min-height: 120px;
+    }
+    
+    .btn-primary.w-100 {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+    
+    /* Map container adjustments */
+    iframe.position-relative {
+        max-height: 250px !important;
+        margin-bottom: 15px;
+    }
+    
+    /* Form adjustments */
+    .wow.fadeInUp form {
+        padding: 15px 10px;
+    }
+    
+    /* Improve touch targets */
+    .form-control, .btn {
+        height: auto;
+        padding: 12px 15px;
+    }
+    
+    /* Better spacing between sections */
+    .container-xxl.py-5 .row.g-4 > div {
+        margin-bottom: 20px;
+    }
+}
+
+/* Booking Section Responsive Styles */
+@media (max-width: 767.98px) {
+    .booking-video-mobile {
+        height: 250px;
+        overflow: hidden;
+    }
+    
+    .booking-video-mobile .video {
+        height: 100%;
+    }
+    
+    .booking-video-mobile .btn-play {
+        transform: scale(0.8);
+    }
+    
+    .bg-dark.d-flex {
+        padding: 20px 0;
+    }
+    
+    .bg-dark.d-flex .p-5 {
+        padding: 15px !important;
+    }
+    
+    .bg-dark.d-flex h1 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem !important;
+    }
+    
+    /* Improve form controls for touch */
+    .form-control, .form-select {
+        font-size: 16px; /* Prevents iOS zoom on focus */
+        height: 50px;
+    }
+    
+    /* Better spacing for validation messages */
+    .invalid-feedback {
+        margin-top: 0.25rem;
+        font-size: 0.875em;
+    }
+    
+    /* Modal video adjustments */
+    .modal-dialog {
+        margin: 0.5rem;
+    }
+    
+    .modal-content {
+        border-radius: 0.25rem;
+    }
+    
+    .ratio-16x9 iframe {
+        border-radius: 0;
+    }
+}
+
+/* iPhone specific fixes */
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+    .contact-info-mobile {
+        padding: 0 10px;
+    }
+    
+    iframe.position-relative {
+        max-height: 200px !important;
+    }
+    
+    .booking-video-mobile {
+        height: 200px;
+    }
+    
+    .bg-dark.d-flex .p-5 {
+        padding: 10px !important;
+    }
+}
+
+/* Landscape mode fixes */
+@media (max-width: 991.98px) and (orientation: landscape) {
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    .mb-5 {
+        margin-bottom: 2rem !important;
+    }
+    
+    /* Adjust booking video height */
+    .booking-video-mobile {
+        height: 180px;
+    }
+    
+    /* Improve form layout in landscape */
+    .form-floating {
+        margin-bottom: 5px;
+    }
+    
+    /* Adjust map height */
+    iframe.position-relative {
+        max-height: 180px !important;
+    }
+    
+    /* Better spacing for contact info */
+    .contact-info-mobile h5.section-title {
+        margin-bottom: 0.25rem;
+    }
+    
+    /* Adjust modal size */
+    .modal-dialog {
+        max-width: 90%;
+        margin: 0.5rem auto;
+    }
+}
+
+/* High-resolution devices */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Ensure images are sharp */
+    img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+    
+    /* Adjust font rendering */
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Global Responsive Fixes */
+html, body {
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    max-width: 100%;
+}
+
+.container, .container-fluid, .container-xxl {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+/* Fix for horizontal scrolling issues */
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+    width: auto;
+}
+
+@media (max-width: 767.98px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.25rem;
+    }
+    h5 {
+        font-size: 1.1rem;
+    }
+    .section-title {
+        font-size: 1rem;
+    }
+    .py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    .mb-5 {
+        margin-bottom: 3rem !important;
+    }
+}
+
+/* Tablet Specific Fixes */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Adjust container padding */
+    .container, .container-fluid, .container-xxl {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    /* Improve spacing */
+    .py-5 {
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
+    }
+    
+    /* Adjust form layouts */
+    .form-floating label {
+        font-size: 0.9rem;
+    }
+    
+    /* Better touch targets */
+    .btn {
+        padding: 0.5rem 1.5rem;
+    }
+    
+    /* Improve navbar on tablets */
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0.75rem;
+    }
+    
+    /* Adjust booking form on tablets */
+    .bg-dark.d-flex .p-5 {
+        padding: 2rem !important;
+    }
+    
+    /* Improve map display */
+    iframe.position-relative {
+        min-height: 300px !important;
+    }
+}
+
+/* Global Responsive Fixes */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Fix container padding on small devices */
+@media (max-width: 767.98px) {
+  .container, .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* Adjust section padding */
+  .container-xxl.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  
+  /* Fix font sizes for better readability on mobile */
+  h1 {
+    font-size: 1.8rem !important;
+  }
+  
+  h5.section-title {
+    font-size: 1rem !important;
+  }
+  
+  /* Improve spacing for section titles */
+  .section-title::before, 
+  .section-title::after {
+    width: 25px;
+    left: -35px;
+  }
+  
+  .section-title::after {
+    right: -35px;
+    left: auto;
+  }
+}
+
+/* Navbar Responsive Fixes */
+@media (max-width: 991.98px) {
+  .navbar-dark .navbar-nav {
+    margin-bottom: 15px;
+  }
+  
+  .navbar-dark .navbar-collapse {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  .profile-dropdown {
+    width: 250px !important;
+    right: 0;
+    left: auto;
+  }
+  
+  /* Fix dropdown positioning */
+  .nav-item.dropdown .dropdown-menu {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-left: 15px;
+  }
+}
+
+/* About Section Responsive Fixes */
+@media (max-width: 767.98px) {
+  .about-img-container {
+    margin-bottom: 2rem;
+  }
+  
+  /* Fix image spacing in about section */
+  .col-6.text-start img, 
+  .col-6.text-end img {
+    margin-bottom: 15px;
+  }
+}
+
+/* Menu Section Responsive Fixes */
+@media (max-width: 767.98px) {
+  /* Make menu tabs scrollable on mobile */
+  .nav-pills {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .nav-pills::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .nav-pills .nav-item {
+    flex-shrink: 0;
+  }
+  
+  /* Fix menu item layout */
+  .d-flex.align-items-center {
+    flex-wrap: wrap;
+  }
+  
+  .d-flex.align-items-center img {
+    margin-bottom: 10px;
+  }
+  
+  .d-flex.align-items-center .w-100 {
+    padding-left: 0 !important;
+    margin-top: 10px;
+  }
+}
+
+/* Service Section Responsive Fixes */
+@media (max-width: 575.98px) {
+  .service-item {
+    margin-bottom: 15px;
+  }
+}
+
+/* Team Section Responsive Fixes */
+@media (max-width: 767.98px) {
+  .team-item {
+    margin-bottom: 20px;
+  }
+}
+
+/* Booking Section Responsive Fixes */
+@media (max-width: 767.98px) {
+  .video {
+    min-height: 300px;
+  }
+  
+  .form-floating > label {
+    padding-left: 10px;
+  }
+}
+
+/* Contact Section Responsive Fixes */
+@media (max-width: 767.98px) {
+  iframe.position-relative {
+    height: 300px !important;
+  }
+}
+
+/* Footer Responsive Fixes */
+@media (max-width: 767.98px) {
+  .footer .footer-menu a {
+    margin-right: 8px;
+    padding-right: 8px;
+  }
+  
+  .footer .btn.btn-social {
+    margin-right: 3px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Fix for iPhone 12 specific issues */
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  /* iPhone 12/12 Pro */
+  .navbar-dark .navbar-brand img {
+    max-height: 40px;
+  }
+  
+  .hero-header {
+    padding-top: 80px;
+  }
+  
+  /* Fix for profile dropdown on iPhone 12 */
+  .profile-dropdown {
+    right: 0 !important;
+    left: auto !important;
+    width: 230px !important;
+  }
+  
+  /* Fix for menu items on iPhone 12 */
+  .d-flex.align-items-center {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  
+  .d-flex.align-items-center img {
+    margin-bottom: 10px;
+  }
+  
+  .d-flex.align-items-center .w-100 {
+    padding-left: 0 !important;
+  }
+}
+
+/* Fix for landscape mode */
+@media (max-width: 991.98px) and (orientation: landscape) {
+  .hero-header {
+    min-height: 450px;
+  }
+  
+  .navbar-collapse {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+}
+
+/* Fix for high-resolution devices */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero-header,
+  .video {
+    background-size: cover;
+  }
+}
