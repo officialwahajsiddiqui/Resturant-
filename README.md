@@ -48,7 +48,7 @@ Restoran is a full-stack restaurant website built with React and Node.js. It fea
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/officialwahajsiddiqui/Resturant-.git
+git clone https://github.com/officialwahajsiddiqui/Resturant-Project.git
 cd Resturant
 ```
 
